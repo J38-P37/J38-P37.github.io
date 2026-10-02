@@ -1,0 +1,6 @@
+title: J38-P37
+theme: minima
+plugins:
+  - jekyll-feed
+markdown: kramdown
+highlighter: rouge
