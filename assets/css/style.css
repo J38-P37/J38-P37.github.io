@@ -1,0 +1,67 @@
+---
+---
+
+// Latin Modern / Computer Modern web font (the LaTeX look)
+@import url("https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css");
+
+// Minima variables. These must come before the import.
+$brand-color: #9d102d;
+$text-color: #222;
+$grey-color: #777;
+$background-color: #ffffff;
+$base-font-family: "Computer Modern Serif", "Latin Modern Roman", "CMU Serif", Georgia, serif;
+$base-font-size: 19px;
+$content-width: 760px;
+
+@import "minima";
+
+// Header: no border, plain title, red hover on nav
+.site-header {
+  border: none;
+}
+.site-title,
+.site-title:visited {
+  color: #222;
+  font-weight: normal;
+}
+.site-nav .page-link {
+  color: #222;
+}
+.site-nav .page-link:hover {
+  color: $brand-color;
+}
+
+// Post list: grey dates, red titles, no "Posts" heading
+.post-list-heading {
+  display: none;
+}
+.post-list {
+  margin-left: 0;
+  list-style: none;
+}
+.post-meta {
+  color: $grey-color;
+  font-size: 0.85em;
+}
+.post-link {
+  color: $brand-color;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+.post-link:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+// Links and headings inside posts
+a {
+  color: $brand-color;
+}
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+// Code blocks
+pre, code {
+  font-size: 0.85em;
+}
